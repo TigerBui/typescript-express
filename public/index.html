@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Copy Clipboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="example">
+            <h1>Hello world with Copy clipboard</h1>
+            <!-- The text field -->
+            <input type="text" value="Hello World" id="myInput">
+    
+            <!-- The button used to copy the text -->
+            <div class="tooltip">
+                <button onclick="copyToClipBoard()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                    Copy text
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/copy-clipboard-tgb.js"></script>
+</body>
+</html>
