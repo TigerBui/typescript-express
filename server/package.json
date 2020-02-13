@@ -1,0 +1,32 @@
+{
+  "name": "i-mmenu",
+  "version": "1.0.0",
+  "main": "./dist/main.js",
+  "scripts": {
+    "dev": "ts-node ./main.ts",
+    "start": "ts-node dist/main.js",
+    "build": "tsc -p . -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.inet.vn:8443/hobv/i-mmenu.git"
+  },
+  "author": "TigerBui",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "ts-node": "^8.6.2",
+    "tsify": "^4.0.1",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  },
+  "description": ""
+}

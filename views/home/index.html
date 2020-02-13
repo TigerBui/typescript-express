@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="immenuApp">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+    <script src="/angular/angular.js"></script>
+    <script src="/app.js"></script>
+    <script src="/directive.app.js"></script>
+    <script src="/home/homeController.js"></script>
+    <script src="/directives/immenu.directive.js"></script>
+</head>
+<body>
+    <section class="main-content" ng-controller="homeCtrl as vm">
+        <div class="container">
+            <nav class="navbar-wrap">
+                <ul mega-menu-drt i-mm-font="Arial, 'sans-serif'" i-mm-config="{screen: 'df'}">
+                    <li ng-repeat="mn in mmDtmock" ng-class="{'i-mm-dropdown': mn.dropdown}">
+                        <a href="#">
+                            {{mn.title}}
+                        </a>
+                        <div class="i-submm-dropdown">
+                            <div class="i-mm-col-item" ng-repeat="smn in [0,1,2,3,4,5]">
+                                <div class="i-mm-group">
+                                    <p class="i-mm-gr-title">Group {{smn}}</p>
+                                    <ul class="i-mm-gr-list">
+                                        <li class="i-mm-gr-item">
+                                            <a class="i-mm-title" href="#">Sản phẩm {{smn}}</a>
+                                            <p class="i-mm-des">Mô tả sản phẩm {{smn}}</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.</p>
+        </div>
+    </footer>
+</body>
+</html>

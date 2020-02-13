@@ -1,0 +1,28 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main-content {
+  height: 100vh;
+}
+
+@media screen and (min-width: 556px) {
+  .container {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 856px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
